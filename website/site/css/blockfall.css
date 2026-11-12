@@ -151,11 +151,11 @@ body {
 }
 
 .intro-done .motto__line strong {
-  animation: motto-type 2.2s steps(38) 0.2s forwards, motto-cursor 0.9s step-end 2.4s infinite;
+  animation: motto-type 1.2s steps(17) 0.2s forwards, motto-cursor 0.9s step-end 1.4s infinite;
 }
 
 @keyframes motto-type {
-  to { width: 38ch; }
+  to { width: 17ch; }
 }
 
 @keyframes motto-cursor {
@@ -167,7 +167,7 @@ body {
   display: block;
   font-size: var(--font-size-medium);
   opacity: 0;
-  transition: opacity 0.5s ease 1.7s;
+  transition: opacity 0.5s ease 1.5s;
 }
 
 .intro-done .motto__line span { opacity: 1; }
