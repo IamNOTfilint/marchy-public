@@ -5,7 +5,7 @@ description: Upstream projects Marchy builds on.
 
 # Credits
 
-Marchy is created by [IamNOTfilint](https://github.com/IamNOTfilint).
+Marchy is created by [FILINT](https://github.com/IamNOTfilint).
 
 Marchy is an independent project. It builds on the work of these projects. This repository links to their official project pages; it does not vendor their source code.
 

@@ -11,7 +11,7 @@ Marchy is an independent, rebranded development of the Omarchy desktop experienc
 - **Website:** https://iamnotfilint.github.io/marchy-public/
 - **Docs:** https://iamnotfilint.github.io/marchy-public/docs/
 
-Marchy is created by [IamNOTfilint](https://github.com/IamNOTfilint).
+Marchy is created by [FILINT](https://github.com/IamNOTfilint).
 
 ## Philosophy
 
