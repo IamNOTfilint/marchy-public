@@ -5,7 +5,7 @@ description: Arch, as you like it.
 
 # Marchy
 
-Marchy is an independent, rebranded development of the Omarchy desktop experience. It is built on Arch Linux and the Hyprland compositor.
+Marchy is an independent, rebranded development of the Omarchy desktop experience. It is built on Arch Linux and the Hyprland compositor. It is created by [IamNOTfilint](https://github.com/IamNOTfilint).
 
 ## The idea
 

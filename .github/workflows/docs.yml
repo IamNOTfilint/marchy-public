@@ -33,9 +33,16 @@ jobs:
         working-directory: docs
         run: npm run build
 
+      - name: Assemble site
+        run: |
+          mkdir -p dist
+          cp -r website/. dist/
+          mkdir -p dist/docs
+          cp -r docs/dist/. dist/docs/
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/dist
+          path: dist
 
   deploy:
     needs: build

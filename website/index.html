@@ -1,55 +1,244 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="tokyo-night" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Marchy — Arch, as you like it</title>
-    <meta name="description" content="Marchy is an independent, rebranded development of the Omarchy desktop experience." />
-    <style>
-      :root { color-scheme: dark; }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #0d0f13;
-        color: #f2f2f2;
-        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-        line-height: 1.6;
-      }
-      main { width: min(680px, 90vw); padding: 4rem 0; }
-      h1 { font-size: clamp(3rem, 10vw, 6rem); letter-spacing: -0.05em; margin: 0; }
-      p { color: #b9bdc7; font-size: 1.15rem; }
-      .tag { color: #f2f2f2; font-weight: 600; }
-      nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
-      a {
-        color: #f2f2f2;
-        text-decoration: none;
-        border: 1px solid #2a2f3a;
-        border-radius: 999px;
-        padding: 0.6rem 1.1rem;
-      }
-      a:hover { border-color: #f2f2f2; }
-      footer { margin-top: 3rem; color: #6f7684; font-size: 0.9rem; }
-    </style>
+    <meta
+      name="description"
+      content="Marchy is an independent, rebranded development of the Omarchy desktop experience. Okonomi for taste. Okimari for safety."
+    />
+    <meta name="theme-color" content="#1a1b26" />
+    <meta property="og:title" content="Marchy — Arch, as you like it" />
+    <meta
+      property="og:description"
+      content="Okonomi for taste. Okimari for safety. An independent, rebranded development of the Omarchy desktop experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iamnotfilint.github.io/marchy-public/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <h1>Marchy</h1>
-      <p class="tag">Arch, as you like it.</p>
-      <p>
-        An independent, rebranded development of the Omarchy desktop experience.
-        Okonomi for taste. Okimari for safety.
-      </p>
-      <nav>
-        <a href="https://IamNOTfilint.github.io/marchy-public/">Documentation</a>
-        <a href="https://github.com/IamNOTfilint/marchy-public">GitHub</a>
-        <a href="https://github.com/IamNOTfilint/marchy-public/blob/main/CREDITS.md">Credits</a>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Marchy home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-name">Marchy</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#idea">Idea</a>
+        <a href="#features">Features</a>
+        <a href="#built-on">Built on</a>
+        <a href="docs/">Docs</a>
+        <a href="https://github.com/IamNOTfilint/marchy-public" rel="noopener">GitHub</a>
       </nav>
-      <footer>
-        Not affiliated with or endorsed by Omarchy, Arch Linux, or Hyprland.
-      </footer>
+
+      <div class="theme-picker" role="group" aria-label="Color theme">
+        <button class="theme-dot" data-theme="tokyo-night" aria-label="Tokyo Night" title="Tokyo Night"></button>
+        <button class="theme-dot" data-theme="catppuccin" aria-label="Catppuccin" title="Catppuccin"></button>
+        <button class="theme-dot" data-theme="gruvbox" aria-label="Gruvbox" title="Gruvbox"></button>
+        <button class="theme-dot" data-theme="nord" aria-label="Nord" title="Nord"></button>
+        <button class="theme-dot" data-theme="everforest" aria-label="Everforest" title="Everforest"></button>
+        <button class="theme-dot" data-theme="rose-pine" aria-label="Rosé Pine" title="Rosé Pine"></button>
+        <button class="theme-dot" data-theme="light" aria-label="Light" title="Light"></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">An independent Arch-based desktop</p>
+          <h1>Marchy<span class="accent-dot">.</span></h1>
+          <p class="tagline">Arch, as you like it.</p>
+          <p class="lede">
+            Okonomi for taste. Okimari for safety. A rebranded, independently
+            maintained development of the Omarchy desktop experience.
+          </p>
+          <p class="byline">
+            Created by
+            <a href="https://github.com/IamNOTfilint" rel="noopener">IamNOTfilint</a>
+          </p>
+          <div class="actions">
+            <a class="button primary" href="docs/">Read the docs</a>
+            <a class="button" href="https://github.com/IamNOTfilint/marchy-public" rel="noopener">Public repo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glow"></div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <em>marchy — setup</em>
+            </div>
+            <pre><code><span class="prompt">~</span> marchy setup
+
+<span class="comment"># choose your own</span>
+browser   <span class="accent">firefox</span>
+office    <span class="accent">libreoffice</span>
+ai        <span class="accent">local only</span>
+desktop   <span class="accent">okonomi</span>
+
+<span class="comment"># safety floor</span>
+firewall  <span class="ok">on</span>
+fde       <span class="ok">on</span>
+sudo      <span class="ok">protected</span>
+telemetry <span class="ok">off</span>
+
+<span class="prompt">~</span> <span class="cursor">█</span></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="idea" class="section">
+        <div class="section-head">
+          <p class="eyebrow">The idea</p>
+          <h2>Your taste. A safe floor.</h2>
+          <p>
+            Marchy keeps the choice in your hands without letting the defaults
+            quietly compromise the system.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-index">01</div>
+            <h3>Okonomi</h3>
+            <p>
+              “As you like it.” Choose your browser, office suite, AI tools,
+              desktop style, and workflow. No pre-selected boxes.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-index">02</div>
+            <h3>Okimari</h3>
+            <p>
+              “The set menu.” Pick a known-good course: Nami, Jo, Tokujo, or
+              Hardened. Previewable and reversible.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-index">03</div>
+            <h3>Safety floor</h3>
+            <p>
+              Firewall on, full-disk encryption, signed packages, no
+              passwordless sudo, no telemetry. Not a taste choice.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section split">
+        <div class="section-head">
+          <p class="eyebrow">What you get</p>
+          <h2>A desktop that explains itself.</h2>
+          <p>
+            Every option says what it changes and how to undo it. The installer
+            is a conversation, not a guessing game.
+          </p>
+        </div>
+
+        <ul class="feature-list">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Choose your own</h3>
+              <p>Neutral choices, no hidden defaults, change anything later.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Presets that respect you</h3>
+              <p>Okimari courses are starting points, not lock-in.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Safety you can verify</h3>
+              <p><code>marchy verify</code> checks the floor instead of asking you to trust a checkbox.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Built on upstream</h3>
+              <p>Arch, Hyprland, Quickshell, and Omarchy. We link to the source; we do not vendor it.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="built-on" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Built on</p>
+          <h2>Standing on good work.</h2>
+          <p>
+            Marchy is independent. These projects keep their own licenses and
+            source.
+          </p>
+        </div>
+
+        <div class="upstream-grid">
+          <a href="https://github.com/omacom/omarchy" rel="noopener">
+            <strong>Omarchy</strong><span>Baseline desktop · MIT</span>
+          </a>
+          <a href="https://archlinux.org" rel="noopener">
+            <strong>Arch Linux</strong><span>Base distribution</span>
+          </a>
+          <a href="https://github.com/hyprwm/Hyprland" rel="noopener">
+            <strong>Hyprland</strong><span>Compositor</span>
+          </a>
+          <a href="https://github.com/quickshell-mirror/quickshell" rel="noopener">
+            <strong>Quickshell</strong><span>Shell toolkit</span>
+          </a>
+          <a href="https://github.com/torvalds/linux" rel="noopener">
+            <strong>Linux</strong><span>Kernel · GPL-2.0</span>
+          </a>
+          <a href="https://github.com/systemd/systemd" rel="noopener">
+            <strong>systemd</strong><span>Init and user space</span>
+          </a>
+        </div>
+
+        <p class="note">
+          No upstream code is vendored in this repository. See
+          <a href="https://github.com/IamNOTfilint/marchy-public/blob/main/CREDITS.md">CREDITS.md</a>.
+        </p>
+      </section>
+
+      <section class="section cta">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h2>Read the manual. Then make it yours.</h2>
+        </div>
+        <a class="button primary" href="docs/">Open the docs</a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Marchy</strong> — created by
+        <a href="https://github.com/IamNOTfilint" rel="noopener">IamNOTfilint</a>
+      </div>
+      <div class="footer-links">
+        <a href="docs/">Docs</a>
+        <a href="https://github.com/IamNOTfilint/marchy-public" rel="noopener">GitHub</a>
+        <a href="https://github.com/IamNOTfilint/marchy-public/blob/main/CREDITS.md">Credits</a>
+      </div>
+      <p class="fine">
+        Not affiliated with or endorsed by Omarchy, Arch Linux, or Hyprland.
+        Upstream projects retain their own licenses.
+      </p>
+    </footer>
+
+    <script src="app.js" defer></script>
   </body>
 </html>

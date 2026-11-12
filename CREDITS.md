@@ -1,5 +1,7 @@
 # Credits and upstream projects
 
+Marchy is created by [IamNOTfilint](https://github.com/IamNOTfilint).
+
 Marchy is an independent project. It builds on the work of these projects. This repository links to their official project pages for attribution and respect; it does not vendor their source code.
 
 | Project | Link | Role |

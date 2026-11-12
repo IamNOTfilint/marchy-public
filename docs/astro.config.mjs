@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://IamNOTfilint.github.io',
-  base: '/marchy-public',
+  base: '/marchy-public/docs',
   integrations: [
     starlight({
       title: 'Marchy',
