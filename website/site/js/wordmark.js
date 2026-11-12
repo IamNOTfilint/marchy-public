@@ -1,7 +1,7 @@
-// Renders the brand wordmark as themable blocks and plays one of three intros.
+// Renders the brand wordmark as colored blocks and plays one of three intros.
 // The brand SVG is a pure pixel grid (100 x 23 cells of rects), so the exact
-// wordmark can be rebuilt from CSS-colored blocks — which means every theme
-// recolors the logo, and the intro can move the pixels around.
+// wordmark can be rebuilt from CSS-colored blocks — which means the intro can
+// move the pixels around, and the mark follows the site palette.
 
 const SVG_URL = 'site/images/brand/marchy-wordmark.svg';
 const CELL_W = 51;
