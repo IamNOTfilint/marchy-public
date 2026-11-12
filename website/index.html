@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marchy — Arch, as you like it</title>
+    <meta name="description" content="Marchy is an independent, rebranded development of the Omarchy desktop experience." />
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #0d0f13;
+        color: #f2f2f2;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+      main { width: min(680px, 90vw); padding: 4rem 0; }
+      h1 { font-size: clamp(3rem, 10vw, 6rem); letter-spacing: -0.05em; margin: 0; }
+      p { color: #b9bdc7; font-size: 1.15rem; }
+      .tag { color: #f2f2f2; font-weight: 600; }
+      nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        border: 1px solid #2a2f3a;
+        border-radius: 999px;
+        padding: 0.6rem 1.1rem;
+      }
+      a:hover { border-color: #f2f2f2; }
+      footer { margin-top: 3rem; color: #6f7684; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Marchy</h1>
+      <p class="tag">Arch, as you like it.</p>
+      <p>
+        An independent, rebranded development of the Omarchy desktop experience.
+        Okonomi for taste. Okimari for safety.
+      </p>
+      <nav>
+        <a href="https://IamNOTfilint.github.io/marchy-public/">Documentation</a>
+        <a href="https://github.com/IamNOTfilint/marchy-public">GitHub</a>
+        <a href="https://github.com/IamNOTfilint/marchy-public/blob/main/CREDITS.md">Credits</a>
+      </nav>
+      <footer>
+        Not affiliated with or endorsed by Omarchy, Arch Linux, or Hyprland.
+      </footer>
+    </main>
+  </body>
+</html>
